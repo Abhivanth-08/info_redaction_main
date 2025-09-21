@@ -1,0 +1,89 @@
+{
+  "timestamp": "2025-09-19T09:41:40.070061",
+  "input_pdf": "C:\\Users\\abhiv\\OneDrive\\Desktop\\Fake Data for Nasscom\\Structured Data (PDF)\\Carlos_E_Rodriguez.pdf",
+  "redactions": [
+    {
+      "page": 1,
+      "type": "Name",
+      "original": "Carlos E. Rodriguez",
+      "replacement": "[Name_1]",
+      "action": "anonymize"
+    },
+    {
+      "page": 1,
+      "type": "Birthday",
+      "original": "June 22, 1967",
+      "replacement": "[Birthday_1]",
+      "action": "anonymize"
+    },
+    {
+      "page": 1,
+      "type": "Gender",
+      "original": "Male",
+      "replacement": "Please click here if you are not redirected within",
+      "action": "dummy_replacement"
+    },
+    {
+      "page": 1,
+      "type": "Race",
+      "original": "Hispanic",
+      "replacement": "If you're having trouble accessing Google Search, ",
+      "action": "dummy_replacement"
+    },
+    {
+      "page": 1,
+      "type": "Address",
+      "original": "1442 Palm Tree Blvd, Miami, FL 33176",
+      "replacement": "Please click here if you are not redirected within",
+      "action": "dummy_replacement"
+    },
+    {
+      "page": 1,
+      "type": "Phone number",
+      "original": "(786) 555-9312",
+      "replacement": "[Phone number_1]",
+      "action": "anonymize"
+    },
+    {
+      "page": 1,
+      "type": "Email",
+      "original": "carlos.rodriguez67@example.com",
+      "replacement": "Please click here if you are not redirected within",
+      "action": "dummy_replacement"
+    },
+    {
+      "page": 1,
+      "type": "SSN",
+      "original": "312-56-7723",
+      "replacement": "[SSN_1]",
+      "action": "anonymize"
+    },
+    {
+      "page": 1,
+      "type": "Health Plan Beneficiary Number",
+      "original": "HUM99384710",
+      "replacement": "[Health Plan Beneficiary Number_1]",
+      "action": "anonymize"
+    },
+    {
+      "page": 1,
+      "type": "Doctor Name",
+      "original": "Amanda Lee",
+      "replacement": "Please click here if you are not redirected within",
+      "action": "dummy_replacement"
+    },
+    {
+      "page": 1,
+      "type": "Hospital Name",
+      "original": "Jackson Memorial Hospital",
+      "replacement": "Please click here if you are not redirected within",
+      "action": "dummy_replacement"
+    }
+  ],
+  "metrics": {},
+  "output_pdf": "secure_redacted_output.pdf",
+  "total_redactions": 11,
+  "completion_time": "2025-09-19T09:42:02.230993",
+  "status": "completed_successfully",
+  "redaction_spans_count": 11
+}
