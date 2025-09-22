@@ -1,4 +1,4 @@
-export const API_BASE_URL = "https://info-redact-backend.onrender.com" || "http://localhost:8000";
+export const API_BASE_URL = "https://backend-y61r.onrender.com" ;
 
 export type RedactResponse = {
   session_id: string;
