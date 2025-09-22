@@ -1,4 +1,4 @@
-export const API_BASE_URL = "https://backend-y61r.onrender.com" ;
+export const API_BASE_URL = import.meta.env.BACKEND_URL ;
 
 export type RedactResponse = {
   session_id: string;
