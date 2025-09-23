@@ -18,14 +18,16 @@ export async function redactDocument(params: {
 }): Promise<RedactResponse> {
   const formData = new FormData();
   formData.append("file", params.file);
-  formData.append("text_redaction_mode", params.text_redaction_mode);
-  formData.append("visual_redaction_mode", params.visual_redaction_mode);
   formData.append("create_overlay_pdf", String(params.create_overlay_pdf));
 
-  const res = await fetch(`${API_BASE_URL}/redact/`, {
+  const url = new URL(`${API_BASE_URL}/redact/`);
+  url.searchParams.set("text_redaction_mode", params.text_redaction_mode);
+  url.searchParams.set("visual_redaction_mode", params.visual_redaction_mode);
+
+  const res = await fetch(url.toString(), {
     method: "POST",
     body: formData,
-    cache: "no-store", // 👈 prevent 304 caching issues
+    cache: "no-store",
   });
 
   if (!res.ok) {
