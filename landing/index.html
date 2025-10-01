@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Info Redaction Web</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-[#0f172a] to-[#047857] text-white font-sans scroll-smooth">
+
+<!-- Navbar -->
+<header class="flex justify-between items-center p-6 bg-black bg-opacity-50 fixed w-full top-0 z-50">
+  <h1 class="text-2xl font-bold">Info Redaction</h1>
+  <nav>
+    <a href="#about" class="px-4 hover:text-[#34d399]">About</a>
+    <a href="#creators" class="px-4 hover:text-[#34d399]">Creators</a>
+    <a href="#demo" class="px-4 hover:text-[#34d399]">Demo</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="h-screen flex flex-col justify-center items-center text-center px-4">
+  <h2 class="text-5xl font-bold mb-4">Protect Sensitive Information</h2>
+  <p class="text-lg mb-6 max-w-2xl">
+    Our Info Redaction system ensures privacy by automatically detecting and removing sensitive details from text. 
+  </p>
+  <button id="tryNowBtn" class="bg-[#047857] hover:bg-[#065f46] px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition">
+    Try Now 🚀
+  </button>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-16 px-8 bg-gradient-to-r from-[#0f172a] to-[#1e3a8a]">
+  <h3 class="text-3xl font-bold mb-6 text-center">About the Project</h3>
+  <p class="max-w-3xl mx-auto text-lg leading-relaxed">
+    The Info Redaction Web app is designed to provide a secure way of sharing and processing data 
+    by automatically identifying and masking personal or sensitive information. 
+    Built using Machine Learning models, it helps safeguard privacy in real-time.
+  </p>
+</section>
+
+<!-- Creators Section -->
+<section id="creators" class="py-16 px-8 bg-gradient-to-r from-[#047857] to-[#065f46]">
+  <h3 class="text-3xl font-bold mb-6 text-center">Meet the Creators</h3>
+  <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <div class="p-6 bg-black bg-opacity-40 rounded-lg shadow-lg text-center">
+      <h4 class="text-xl font-semibold">Abhivanth</h4>
+    </div>
+    <div class="p-6 bg-black bg-opacity-40 rounded-lg shadow-lg text-center">
+      <h4 class="text-xl font-semibold">Sivakarthick</h4>
+    </div>
+    <div class="p-6 bg-black bg-opacity-40 rounded-lg shadow-lg text-center">
+      <h4 class="text-xl font-semibold">Dhamodharan</h4>
+    </div>
+    <div class="p-6 bg-black bg-opacity-40 rounded-lg shadow-lg text-center">
+      <h4 class="text-xl font-semibold">Naveen Prasath</h4>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-6 bg-black bg-opacity-70">
+  <p>&copy; 2025 Info Redaction</p>
+</footer>
+
+<script>
+  const encodedUrl = "aHR0cHM6Ly8wMjA3YWJoaS1pbmZvLXJlZGFjdGlvbi5oZi5zcGFjZS8=";
+
+  document.getElementById("tryNowBtn").addEventListener("click", () => {
+    const url = atob(encodedUrl);
+    window.open(url, "_blank");
+  });
+</script>
+
+</body>
+</html>
