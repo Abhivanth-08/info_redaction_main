@@ -51,6 +51,20 @@ function App() {
         </div>
       </section>
 
+      <section className="demo-section text-center py-16">
+        <h2 className="text-3xl font-bold mb-4">Watch Our Demo</h2>
+        <p className="mb-6">See how Info Redaction works in action.</p>
+        <a
+          href="https://youtu.be/oMhY89Tx6J0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition"
+        >
+          Watch Demo 🎬
+        </a>
+      </section>
+
+
       <footer className="text-center py-6 bg-black bg-opacity-70">
         <p>&copy; 2025 Info Redaction</p>
       </footer>
