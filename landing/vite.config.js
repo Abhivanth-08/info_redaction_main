@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  root: './landing', // Set the root to the 'landing' folder
+  root: './landing',      // Vite root is landing folder
   build: {
-    outDir: '../dist', // Output the build to the 'dist' folder
-    emptyOutDir: true, // Clean the output directory before each build
+    outDir: '../dist',    // Output goes to dist folder
+    emptyOutDir: true,
   },
 });
